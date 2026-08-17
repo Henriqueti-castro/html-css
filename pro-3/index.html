@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> img hover </title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            
+        }
+
+        .container  {
+            display: flex;
+            gap: 10px;
+            width: 500px;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            padding: 50px;
+        }
+
+        .card {
+            width: 200px;
+            height: 400px;
+            border-radius: 20px;
+            background-color: #000000;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+
+        .img1 {
+            background: url('img/img1.jpg') center/cover;
+            transition: transform 0.5s ease;
+        }
+
+        .img1:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px #000000;
+        }
+
+        .img2 {
+            background: url('img/img2.jpg') center/cover;
+            transition: transform 0.5s ease;
+        }
+
+        .img2:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px #000000;
+        }
+
+        .img3 {
+            background: url('img/img3.jpg') center/cover;
+            transition: transform 0.5s ease;
+        }
+
+        .img3:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px #000000;
+        }
+        
+
+    </style>
+</head>
+<body>
+        <div class="container">
+        <div class="card img1"></div>
+        <div class="card img2"></div>
+        <div class="card img3"></div>
+    </div>
+    
+</body>
+</html>
