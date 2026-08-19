@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transform </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: #1c1c1c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: #808080;
+            width: 800px;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content {
+            background-color: #ffffff;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            transition: transform 1s linear;
+        }
+
+        .content:hover {
+            transform: translate(700%, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content"></div>
+    </div>
+</body>
+</html>
