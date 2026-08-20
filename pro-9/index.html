@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> animation </title>
+    <style>
+
+        body {
+    background-color: #111010;
+    height: 100vh;
+    position: relative;
+}
+
+.mover {
+    width: 30vw;
+    height: 50vh;
+    background-image: radial-gradient(circle, #808080, #333333, #111010, transparent);
+    position: fixed;
+    z-index: -1;
+    animation: mover 2s ease infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(100px, 0);
+        opacity: 1;
+    }
+}
+
+.mover2 {
+    width: 30vw;
+    height: 50vh;
+    background-image: radial-gradient(circle, #808080, #333333, #111010, transparent);
+    position: fixed;
+    z-index: -1;
+    animation: mover2 2s ease infinite;
+    position: fixed;
+    top: 50%;
+    left: 70%;
+}
+
+@keyframes mover2 {
+    0% {
+        left: 70%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 63%;
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="mover"></div>
+    <div class="mover2"></div>
+    
+</body>
+</html>
